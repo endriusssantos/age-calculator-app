@@ -1,0 +1,158 @@
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    background-color: hsl(0, 0%, 94%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    height: 500px;
+    border-radius: 15px;
+    border-bottom-right-radius: 100px;
+    padding: 30px;
+}
+
+.container .date {
+    display: flex;
+    gap: 15px;
+}
+
+.container .date .day,
+.container .date .month,
+.container .date .year {
+    width: 150px;
+}
+
+.container .date .day .day-name,
+.container .date .month .month-name,
+.container .date .year .year-name {
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.container .date .day .day-input,
+.container .date .month .month-input,
+.container .date .year .year-input {
+    font-family: "Poppins", sans-serif;
+    color: hsl(0, 0%, 8%);
+    caret-color: hsl(259, 100%, 65%);
+    font-size: 20px;
+    font-weight: 700;
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    border: 1px hsl(0, 0%, 86%) solid;
+    border-radius: 6px;
+    margin-top: 3px;
+}
+
+.container .date .day .day-input::placeholder,
+.container .date .month .month-input::placeholder,
+.container .date .year .year-input::placeholder {
+    color: hsl(0, 1%, 44%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container .date .day .day-input:focus,
+.container .date .month .month-input:focus,
+.container .date .year .year-input:focus {
+    outline: none;
+    border: 1px hsl(259, 100%, 65%) solid;
+}
+
+.container .line {
+    border: 1px hsl(0, 0%, 86%) solid;
+    margin: 50px 0;
+    position: relative;
+}
+
+.container .btn {
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    transition: 0.3s;
+}
+
+.container .btn:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.container .btn .arrow {
+    width: 30px;
+}
+
+.container .results .years,
+.container .results .months,
+.container .results .days {
+    font-size: 55px;
+    font-weight: 800;
+    font-style: oblique;
+}
+
+.container .results .years .result-years,
+.container .results .months .result-months,
+.container .results .days .result-days {
+    color: hsl(259, 100%, 65%);
+}
+
+.container .date .day .day-name.error-name,
+.container .date .month .month-name.error-name,
+.container .date .year .year-name.error-name {
+    color: hsl(0, 100%, 67%);
+}
+
+.container .date .day .day-input.error-input,
+.container .date .month .month-input.error-input,
+.container .date .year .year-input.error-input {
+    border: 1px hsl(0, 100%, 67%) solid;
+}
+
+.container .date .day .valid-date {
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    font-style: oblique;
+    margin-top: 5px;
+    display: none;
+}
+
+.container .date .day .valid-number,
+.container .date .month .valid-number,
+.container .date .year .valid-number {
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    font-style: oblique;
+    margin-top: 5px;
+    display: none;
+}
+
+.container .date .day .empty,
+.container .date .month .empty,
+.container .date .year .empty {
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    font-style: oblique;
+    margin-top: 5px;
+    display: none;
+} 

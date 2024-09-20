@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Age Calculator App</title>
+
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="date">
+                <div class="day">
+                    <label for="day" class="day-name" id="day-name">Day</label>
+                    <input type="number" placeholder="DD" class="day-input" id="day">
+                    <p class="valid-date">Must be a valid date</p>
+                    <p class="valid-number">Must be a valid day</p>
+                    <p class="empty">This field is required</p>
+                </div>
+                <div class="month">
+                    <label for="month" class="month-name" id="month-name">Month</label>
+                    <input type="number" placeholder="MM" class="month-input" id="month">
+                    <p class="valid-number">Must be a valid month</p>
+                    <p class="empty">This field is required</p>
+                </div>
+                <div class="year">
+                    <label for="year" class="year-name" id="year-name">Year</label>
+                    <input type="number" placeholder="YYYY" class="year-input" id="year">
+                    <p class="valid-number">Must be in the past</p>
+                    <p class="empty">This field is required</p>
+                </div>
+            </div>
+            <div class="line">
+                <button class="btn" id="btn"><img src="./src/images/icon-arrow.svg" alt="arrow button" class="arrow"></button>
+            </div>
+            <div class="results">
+                <h2 class="years"><strong class="result-years">--</strong> years</h2>
+                <h2 class="months"><strong class="result-months">--</strong> months</h2>
+                <h2 class="days"><strong class="result-days">--</strong> days</h2>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

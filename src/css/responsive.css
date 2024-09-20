@@ -1,0 +1,33 @@
+@media(max-width: 425px) {
+    .container {
+        width: 90%;
+    }
+
+    .container .date .day .day-name,
+    .container .date .month .month-name,
+    .container .date .year .year-name {
+        font-size: 14px;
+    }
+
+    .container .date .day .day-input,
+    .container .date .month .month-input,
+    .container .date .year .year-input {
+        width: 80px;
+    }
+
+    .container .line {
+        margin: 50px 0;
+    }
+
+    .container .btn {
+        width: 70px;
+        height: 70px;
+        right: 40%;
+    }
+
+    .container .results .years,
+    .container .results .months,
+    .container .results .days {
+        font-size: 48px;
+    }
+}
